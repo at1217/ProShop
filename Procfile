@@ -1,0 +1,1 @@
+web: node proshop-backend/server.js
