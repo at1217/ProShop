@@ -41,13 +41,11 @@ const App = () => {
               exact
               path='/admin/productlist'
               component={ProductListScreen}
-              exact
             />
             <Route
               exact
               path='/admin/productlist/:pageNumber'
               component={ProductListScreen}
-              exact
             />
             <Route
               path='/admin/product/:id/edit'

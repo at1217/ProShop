@@ -16,7 +16,6 @@ const ProductCarousel = () => {
     dispatch(listTopProducts());
   }, [dispatch]);
 
-  console.log(productTopRated);
   return loading ? (
     <Loader />
   ) : error ? (
@@ -29,7 +28,7 @@ const ProductCarousel = () => {
             <Image src={product.image} alt={product.name} fluid />
             <Carousel.Caption className='carousel-caption'>
               <h2>
-                {product.name} ({product.price})
+                {product.name} (${product.price})
               </h2>
             </Carousel.Caption>
           </Link>
